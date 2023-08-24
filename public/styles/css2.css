@@ -1,0 +1,49 @@
+div.center-ui-wave {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 22px;
+  font-weight: lighter;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+div.items{
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+  padding: 15px;
+  bottom: 10px;
+  left: 50%;
+  width: auto;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+
+div.items button.item-container {
+  position: relative;
+  display: block;
+  background-color: rgba(255, 255, 255, .3);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+}
+
+div.items button.item-container:hover{
+  background-color: rgba(255, 255, 255, .46);
+  width: 100px;
+  transform: translateY(-22px);
+  transition: .3s;
+}
+
+div.items button.item-container:active {
+  background-color: rgba(255, 255, 255, .58);
+  transition: .3s;
+}

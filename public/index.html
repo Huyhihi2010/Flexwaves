@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waves</title>
+
+  <!--style sheet-->
+  <link rel="stylesheet" href="./styles/css1.css" type="text/css">
+  <link rel="stylesheet" href="./styles/css2.css" type="text/css">
+  <link rel="stylesheet" href="./styles/css3.css" type="text/css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script type="module" src="./install.js" defer></script>
+</head>
+<body oncontextmenu="return false">
+  <a download-mode></a>
+  <script>
+    document.addEventListener('keydown', (e) => {
+      if(e.ctrlKey) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    })
+  </script>
+  <!--s-->
+  <div class="error" style="position: fixed;display: none;background-color: black;width: 100%;height: 100%;"></div>
+  <!--game installion-->
+  <div class="control-inputs" style="display: none;">
+    <div class="inputs-move">
+      <div class="inputs"></div>
+    </div>
+    <div class="inputs-mouse">
+      <div class="inputs"></div>
+    </div>
+  </div>
+  <!--game ui-->
+  <div class="items">
+    <button class="item-container" 1st-item>MP5</button>
+    <button class="item-container" 2nd-item></button>
+    <button class="item-container" 3th-item></button>
+  </div>
+  <!--ui-->
+  <div class="center-ui-wave">
+    <span class="wave-sp">
+      <span class="sp-1">You are on wave </span>
+      <span class="sp-2">1</span>
+    </span>
+  </div>
+  <!--canvas game-->
+  <canvas tabindex=0></canvas>
+
+</body>
+</html>
